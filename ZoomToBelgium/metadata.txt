@@ -8,7 +8,8 @@
 
 [general]
 name=ZoomToBelgium
-qgisMinimumVersion=2.99
+qgisMinimumVersion=2.00
+qgisMaximumVersion=2.99
 description=A button to zoom to any of the Belgian Municipalities
 version=0.1
 author=Michel Stuyts
