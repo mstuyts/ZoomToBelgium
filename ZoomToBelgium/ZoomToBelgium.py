@@ -800,8 +800,11 @@ class ZoomToBelgium:
     def zoomtomunicipality(self, id):
         canvas = self.iface.mapCanvas()
         PROJECTsrs = canvas.mapSettings().destinationCrs()
-        if not canvas.hasCrsTransformEnabled():
-            canvas.setCrsTransformEnabled(True)
+        try:
+            if not canvas.hasCrsTransformEnabled():
+                canvas.setCrsTransformEnabled(True)
+        except:
+            pass
         my_crs = QgsCoordinateReferenceSystem(31370)
         canvas.setDestinationCrs(my_crs)
 
@@ -818,8 +821,13 @@ class ZoomToBelgium:
         canvas.refresh()
     
     def opensettings(self):
-        selectedmunicipality=s.value("zoomtobelgium/municipality", 518)
-        selectedmunicipalityindex=municipality_name.keys().index(int(selectedmunicipality[0]))
+        selectedmunicipality=s.value("zoomtobelgium/municipality", "notset")
+        if selectedmunicipality=="notset":
+            selectedmunicipality[0]=518
+        try:
+            selectedmunicipalityindex=municipality_name.keys().index(int(selectedmunicipality[0]))
+        except:
+            selectedmunicipalityindex=list(municipality_name).index(int(selectedmunicipality[0]))
         self.dlg.comboGemeentes.setCurrentIndex(selectedmunicipalityindex)
         self.dlg.show()
         
@@ -828,7 +836,10 @@ class ZoomToBelgium:
         s.setValue("zoomtobelgium/municipality", self.searchmunicipality(municipality_name,self.dlg.comboGemeentes.currentText().strip()))
 
     def searchmunicipality(self,list,search_municipality):
-        return [id for id,municipality in list.iteritems() if municipality == search_municipality]
+        try:
+            return [id for id,municipality in list.iteritems() if municipality == search_municipality]
+        except:
+            return [id for id,municipality in list.items() if municipality == search_municipality]
 
     def run(self):
         selectedmunicipality=s.value("zoomtobelgium/municipality", 0)
