@@ -38,6 +38,21 @@ from collections import OrderedDict
 from qgis.core import *
 
 class ZoomToBelgium:
+    # noinspection PyMethodMayBeStatic
+    def tr(self, message):
+        """Get the translation for a string using Qt translation API.
+
+        We implement this ourselves since we do not inherit QObject.
+
+        :param message: String for translation.
+        :type message: str, QString
+
+        :returns: Translated version of message.
+        :rtype: QString
+        """
+        # noinspection PyTypeChecker,PyArgumentList,PyCallByClass
+        return QCoreApplication.translate('ZoomToBelgium', message)
+
     def __init__(self, iface):
         self.dlg = ZoomToBelgiumDialog()
         global municipality_name
@@ -679,20 +694,6 @@ class ZoomToBelgium:
         self.toolbar.setObjectName(u'ZoomToBelgium')
         self.dlg.button_box.accepted.connect(self.savesettings)
 
-    # noinspection PyMethodMayBeStatic
-    def tr(self, message):
-        """Get the translation for a string using Qt translation API.
-
-        We implement this ourselves since we do not inherit QObject.
-
-        :param message: String for translation.
-        :type message: str, QString
-
-        :returns: Translated version of message.
-        :rtype: QString
-        """
-        # noinspection PyTypeChecker,PyArgumentList,PyCallByClass
-        return QCoreApplication.translate('ZoomToBelgium', message)
 
 
     def add_action(
@@ -829,6 +830,10 @@ class ZoomToBelgium:
         except:
             selectedmunicipalityindex=list(municipality_name).index(int(selectedmunicipality[0]))
         self.dlg.comboGemeentes.setCurrentIndex(selectedmunicipalityindex)
+        introsubtext=self.tr(u'Select Municipality')
+        introtext=u'<html><head/><body><p><span style=" font-size:16pt;">'+introsubtext+'</span></p></body></html>'
+        self.dlg.intro.setText(introtext.replace("&lt;","<").replace("&gt;",">").replace("&quot;",'"'))
+        #self.dlg.intro.setHtml(introtext)
         self.dlg.show()
         
     def savesettings(self):
