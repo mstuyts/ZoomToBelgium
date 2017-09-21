@@ -821,9 +821,10 @@ class ZoomToBelgium:
         canvas.refresh()
     
     def opensettings(self):
-        selectedmunicipality=s.value("zoomtobelgium/municipality", "notset")
-        if selectedmunicipality=="notset":
-            selectedmunicipality[0]=518
+        selectedmunicipality=[]
+        selectedmunicipality=s.value("zoomtobelgium/municipality")
+        if len(selectedmunicipality)==0:
+            selectedmunicipality.append(518)
         try:
             selectedmunicipalityindex=municipality_name.keys().index(int(selectedmunicipality[0]))
         except:
@@ -832,7 +833,6 @@ class ZoomToBelgium:
         self.dlg.show()
         
     def savesettings(self):
-        s = QSettings()
         s.setValue("zoomtobelgium/municipality", self.searchmunicipality(municipality_name,self.dlg.comboGemeentes.currentText().strip()))
 
     def searchmunicipality(self,list,search_municipality):
@@ -843,7 +843,6 @@ class ZoomToBelgium:
 
     def run(self):
         selectedmunicipality=s.value("zoomtobelgium/municipality", 0)
-        #print(selectedmunicipality)
         if selectedmunicipality=="" or selectedmunicipality==0 or selectedmunicipality is None:
             self.nomunicipalityselected()
         else:
