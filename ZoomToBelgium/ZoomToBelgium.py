@@ -823,10 +823,12 @@ class ZoomToBelgium:
     def opensettings(self):
         selectedmunicipality=[]
         selectedmunicipalitytemp=s.value("zoomtobelgium/municipality")
-        if not selectedmunicipality:
+        
+        if not selectedmunicipalitytemp:
             selectedmunicipality.append(518)
         else:
-            selectedmunicipality.append(int(selectedmunicipalitytemp))
+            selectedmunicipality.append(int(selectedmunicipalitytemp[0]))
+        print(selectedmunicipality)
         try:
             selectedmunicipalityindex=municipality_name.keys().index(int(selectedmunicipality[0]))
         except:
