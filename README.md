@@ -10,4 +10,4 @@ Deze plugin is getest in QGIS 2.18.13 en QGIS 2.99 op Windows 10 en hij lijkt te
 
 
 
-<p style="font-size: 500%;" align="center">**Download the prerelease version**</p>
+<p style="font-size: 500%;" align="center"><b><a href="https://github.com/mstuyts/ZoomToBelgium/releases/">Download the prerelease version</b></a></p>
