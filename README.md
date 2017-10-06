@@ -7,3 +7,7 @@ The plugin was tested in QGIS 2.18.13 and QGIS 2.99 on Windows 10 and it seems t
 
 ## Deze QGIS plugin is nog niet helemaal klaar, maar je mag hem al proberen
 Deze plugin is getest in QGIS 2.18.13 en QGIS 2.99 op Windows 10 en hij lijkt te werken, maar moet nog verder getest worden.
+
+
+
+<p style="font-size: 500%;" align="center">**Download the prerelease version**</p>
