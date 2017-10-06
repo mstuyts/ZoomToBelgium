@@ -1,6 +1,7 @@
 # ZoomToBelgium ![ZoomToBelgium](https://raw.githubusercontent.com/mstuyts/ZoomToBelgium/master/ZoomToBelgium/icon.png)
-A button to zoom to any of the Belgian Municipalities in QGIS
-Een knop om naar één van de Belgische steden of gemeenten te zoomen in QGIS 
+*A button to zoom to any of the Belgian Municipalities in QGIS*
+
+*Een knop om naar één van de Belgische steden of gemeenten te zoomen in QGIS*
 
 ## This QGIS plugin isn't ready yet, but you can try it if you want
 The plugin was tested in QGIS 2.18.13 and QGIS 2.99 on Windows 10 and it seems to work. Further testing is necessary. 
