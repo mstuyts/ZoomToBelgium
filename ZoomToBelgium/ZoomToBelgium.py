@@ -2,8 +2,7 @@
 """
 /***************************************************************************
  ZoomToBelgium
-                                 A QGIS plugin
- A button to zoom to any of the Belgian Municipalities
+ A button to zoom to any of the Belgian Municipalities in QGIS
                               -------------------
         begin                : 2017-09-19
         copyright            : (C) 2017 by Michel Stuyts
