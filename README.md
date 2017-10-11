@@ -1,5 +1,6 @@
 # ZoomToBelgium ![ZoomToBelgium](https://raw.githubusercontent.com/mstuyts/ZoomToBelgium/master/ZoomToBelgium/icon.png)
-*A button to zoom to any of the Belgian Municipalities in QGIS*
+
+## A button to zoom to any of the Belgian Municipalities in QGIS
 
 ## Een knop om naar één van de Belgische steden of gemeenten te zoomen in QGIS
 
