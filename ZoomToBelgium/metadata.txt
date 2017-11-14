@@ -2,14 +2,15 @@
 name=ZoomToBelgium
 qgisMinimumVersion=2.14
 qgisMaximumVersion=2.99
-description=A button to zoom to any of the Belgian Municipalities. Een knop om naar 1 van de Belgische steden of gemeenten te zoomen.
-version=0.1.1
+description=A button to zoom to any of the Belgian Municipalities. Een knop om naar 1 van de Belgische steden of gemeenten te zoomen. Un bouton pour zoomer sur une des communes belges
+version=0.2
 author=Michel Stuyts
 email=info@stuyts.xyz
-about=A button to zoom to any of the Belgian Municipalities.
+about=This plugin adds a button to your toolbar in QGIS to zoom to a selected Belgian municipality.
 tracker=https://github.com/mstuyts/ZoomToBelgium/issues
 repository=https://github.com/mstuyts/ZoomToBelgium
-changelog=version 0.1.1: updated metadata
+changelog=version 0.2: added translations of names of municipalities
+    version 0.1.1: updated metadata
     version 0.1: first working version
 tags=zoom, belgium, municipality
 homepage=https://stuyts.xyz
