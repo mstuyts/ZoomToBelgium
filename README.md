@@ -3,7 +3,7 @@
 ## A button to zoom to any of the Belgian Municipalities in QGIS
 
 ## Een knop om naar één van de Belgische steden of gemeenten te zoomen in QGIS
-The plugin was tested in QGIS 2.18.14 and QGIS 2.99 (master) on Windows 10. 
+This plugin was tested in QGIS 2.18.14 and QGIS 2.99 (master) on Windows 10. 
 
 Deze plugin is getest in QGIS 2.18.14 en QGIS 2.99 (master) op Windows 10.
 
