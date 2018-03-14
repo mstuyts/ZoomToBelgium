@@ -6,8 +6,7 @@
  A button to zoom to any of the Belgian Municipalities
                              -------------------
         begin                : 2017-09-19
-        git sha              : $Format:%H$
-        copyright            : (C) 2017 by Michel Stuyts
+        author               : Michel Stuyts
         email                : info@stuyts.xyz
  ***************************************************************************/
 
