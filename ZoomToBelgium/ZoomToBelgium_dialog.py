@@ -45,5 +45,5 @@ class ZoomToBelgiumDialog(QDialog, FORM_CLASS):
         super(ZoomToBelgiumDialog, self).__init__(parent)
         self.resize(QSize(400, 230).expandedTo(self.minimumSizeHint()))
         self.setWindowIcon(QIcon(":/plugins/ZoomToBelgium/icon.png"))
-        self.setWindowFlags( self.windowFlags() & ~Qt.WindowContextHelpButtonHint |  Qt.CustomizeWindowHint  | Qt.WindowTitleHint  )
+        self.setWindowFlags(self.windowFlags() & ~Qt.WindowContextHelpButtonHint | Qt.CustomizeWindowHint | Qt.WindowTitleHint)
         self.setupUi(self)
