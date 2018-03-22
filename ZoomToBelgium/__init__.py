@@ -8,7 +8,6 @@
         begin                : 2017-09-19
         copyright            : (C) 2017 by Michel Stuyts
         email                : info@stuyts.xyz
-        git sha              : $Format:%H$
  ***************************************************************************/
 
 /***************************************************************************
@@ -22,14 +21,6 @@
  This script initializes the plugin, making it known to QGIS.
 """
 
-
-# noinspection PyPep8Naming
-def classFactory(iface):  # pylint: disable=invalid-name
-    """Load ZoomToBelgium class from file ZoomToBelgium.
-
-    :param iface: A QGIS interface instance.
-    :type iface: QgsInterface
-    """
-    #
+def classFactory(iface):
     from .ZoomToBelgium import ZoomToBelgium
     return ZoomToBelgium(iface)
