@@ -9,7 +9,7 @@ Deze plugin is getest in QGIS 2.18.17 en QGIS 3.0 op Windows 10.
 
 
 ## How to install the plugin - Hoe installeer je deze plugin
-<p style="font-size: 500%;" align="center"><b><a href="https://github.com/mstuyts/ZoomToBelgium/releases/">Download from Github - Download vanop Github</b></a></p>
+<p style="font-size: 500%;" align="center"><b><a href="https://github.com/mstuyts/ZoomToBelgium/releases/">Download from Github - Download van Github</b></a></p>
 
 This plugin is available in the official [QGIS plugin repository](http://plugins.qgis.org/plugins/ZoomToBelgium/). So you can download it from within QGIS.
     
