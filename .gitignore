@@ -1,2 +1,5 @@
 *.pyc
 *.zip
+*.bat
+*.pyc
+/workfiles/**
