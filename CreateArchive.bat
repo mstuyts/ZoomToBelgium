@@ -1,1 +1,0 @@
-7z a -tzip ZoomToBelgium.zip "../ZoomToBelgium/*" -xr!*.pyc -xr!*.bat -xr!.gitignore -xr!README.md -xr!LICENSE -xr!.git -xr!workfiles -xr!icon.psd -xr!*.zip -xr!Makefile -xr!*.cfg -xr!*.pro -xr!*.ts -xr!scripts
