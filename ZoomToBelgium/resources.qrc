@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/plugins/ZoomToBelgium" >
-        <file>icon.png</file>
-        <file>settings.png</file>
-    </qresource>
-</RCC>
